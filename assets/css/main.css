@@ -1,0 +1,92 @@
+@import url(https://db.onlinewebfonts.com/c/6f0b5b0c0f29b5396167780de671b535?family=Europa+Nuova+Regular);
+@import url(https://db.onlinewebfonts.com/c/c5fd0c61946281161e63ad9687a5b5d4?family=Europa+Nuova+Bold);
+@import url(https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa+Regular);
+@import url(https://db.onlinewebfonts.com/c/d3bfee78e8ead45d9057a95bb6ff5de8?family=Europa-Bold);
+
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./../fonts/sansita-v11-latin-regular.woff2') format('woff2'); 
+  }
+ 
+  @font-face {
+    font-display: swap; 
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./../fonts/sansita-v11-latin-700.woff2') format('woff2'); 
+  }
+
+  button {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Europa-Bold", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    margin: 0;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+
+  .hidden {
+    display: none;
+  }
+
+  .container {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
