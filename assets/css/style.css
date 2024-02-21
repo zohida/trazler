@@ -32,6 +32,96 @@
   gap: 24px;
 }
 
+@media screen and (max-width: 1560px) {
+  .nav-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .nav-link {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .nav-link {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .site-logo {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .nav-list {
+    gap: 20px;
+  }
+
+  .site-logo {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-inner {
+    flex-direction: column;
+    position: absolute;
+    gap: 20px;
+  }
+  .header {
+    padding-top: 43px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .site-logo {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-link {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .header-inner {
+    flex-direction: row;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .btn-get {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .site-logo {
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
 /* HERO SECTION STYLES */
 
 .hero {
@@ -87,6 +177,42 @@
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-title {
+    font-size: 50px;
+    line-height: 84.1px;
+    top: -30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 84.1px;
+    top: -30px;
+  }
+
+  .hero-subtitle {
+    font-size: 30px;
+    line-height: 30px;
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-title {
+    font-size: 36px;
+    line-height: 60px;
+    top: -30px;
+  }
+
+  .hero-subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    top: -10px;
+  }
 }
 
 /* BUTTON STYLES */
@@ -174,6 +300,15 @@
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 25%;
+}
+
+button {
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  opacity: 0.6;
+  transform: scale(0.94);
 }
 
 /* CARDS STYLE */
@@ -303,6 +438,17 @@
   display: flex;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cards {
+  max-width: 560px;
+  width: 100%;
+}
+
+.cards img {
+  max-width: 560px;
+  width: 100%;
 }
 
 .cards-inner {
@@ -310,6 +456,12 @@
   align-items: center;
   flex-direction: column;
   gap: 80px;
+}
+
+@media screen and (max-width: 1780px) {
+  .cards-list {
+    justify-content: center;
+  }
 }
 
 /* TRAVEL SECTIONS STYLES */
@@ -358,7 +510,7 @@
   line-height: 20px;
 }
 
-.destination-text {
+.destinations-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -368,8 +520,29 @@
   margin: 30px 0 198px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
 }
+
+@media screen and (max-width: 907px) {
+  .destinations-list {
+    margin-bottom: 100px;
+  }
+
+  .destinations {
+    margin-top: 100px;
+  }
+
+  .destination-title {
+    text-align: center;
+  }
+
+  .destinations-text {
+    text-align: center;
+  }
+}
+
+/* CATEGORY STYLES  */
 
 .category-list {
   display: flex;
@@ -378,10 +551,6 @@
   margin-bottom: 31px;
   position: relative;
 }
-
-/* .category {
-  margin-bottom: 160px;
-} */
 
 .category-item {
   position: relative;
@@ -524,6 +693,177 @@
   align-items: center;
   gap: 50px;
   flex-direction: column;
+}
+
+@media screen and (max-width: 1780px) {
+  .category-box {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .destinations-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .categories-card-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 680px;
+    width: 100%;
+  }
+
+  .category-item span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .category-item {
+    display: none;
+  }
+
+  .category-item:nth-child(1) {
+    display: block;
+  }
+
+  .category-item:nth-child(2) {
+    display: block;
+  }
+
+  .category-item:nth-child(3) {
+    display: block;
+  }
+
+  .category-item::after {
+    position: relative;
+    z-index: 10;
+  }
+
+  .category-list::after {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .category-item {
+    display: none;
+  }
+
+  .category-item:nth-child(1) {
+    display: block;
+  }
+
+  .category-item:nth-child(2) {
+    display: block;
+  }
+
+  .category-item:nth-child(3) {
+    display: block;
+  }
+
+  .category-item::after {
+    position: relative;
+    z-index: 10;
+  }
+
+  .category-list::after {
+    width: 90%;
+  }
+
+  .categories-card-big .big-img {
+    width: 560px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .category-card-item {
+    align-items: flex-start;
+  }
+
+  .category-card__title {
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  .categories-card-big .big-img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .category-card-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card__title {
+    margin: 0;
+    text-align: center;
+  }
+
+  .category-item-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category-card__subtitle {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .categories-card-big .big-img {
+    width: 500px;
+  }
+
+  .category-card-item {
+    gap: 10px;
+  }
+
+  .category-card__time {
+    text-align: center;
+  }
+
+  .category-item__title {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24.58px;
+    margin-bottom: 16px;
+  }
+
+  .categories-card-big .big-img {
+    width: 460px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .categories-card-big .big-img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  .categories-card-big .big-img {
+    width: 350px;
+  }
+
+  .category-item:nth-child(3) {
+    display: none;
+  }
+
+  .category-list::after {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .categories-card-big .big-img {
+    width: 290px;
+  }
 }
 
 /* FOOTER STYLES */
@@ -1008,6 +1348,13 @@
 
 .footer-link {
   background-color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 /* SECOND PAGE STYLE */
