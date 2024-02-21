@@ -462,6 +462,120 @@ button:hover {
   .cards-list {
     justify-content: center;
   }
+
+  .cards {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .cards-title {
+    margin: 36px 0 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #121416;
+  }
+
+  .cards-author-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .author-name {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .card-time {
+    font-family: "EuropaNuova-Regular";
+    margin-left: 10px;
+    color: #6c757d;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .cards-link {
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .cards {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .cards-title {
+    margin: 30px 0 20px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #121416;
+  }
+
+  .author-name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .author-name::after {
+    display: none;
+  }
+
+  .card-time {
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .cards-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .cards {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .cards {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .cards {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .cards-title {
+    margin: 25px 0 15px;
+    font-size: 24px;
+  }
+
+  .author-name {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .card-time {
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .cards-link {
+    font-size: 15px;
+    line-height: 28px;
+  }
 }
 
 /* TRAVEL SECTIONS STYLES */
@@ -530,7 +644,7 @@ button:hover {
   }
 
   .destinations {
-    margin-top: 100px;
+    margin-top: 160px;
   }
 
   .destination-title {
