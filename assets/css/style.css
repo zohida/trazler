@@ -1009,6 +1009,104 @@ button:hover {
   z-index: 1;
 }
 
+@media screen and (max-width: 1200px) {
+  .header-wrap {
+    flex-direction: column;
+    position: absolute;
+    gap: 20px;
+  }
+
+  .site-header {
+    padding-bottom: 1200px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .site-logo {
+    width: 360px;
+  }
+
+  .bread-crumb__list {
+    margin-top: 150px;
+  }
+
+  .content-title {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .content-text {
+    line-height: 40px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .content-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .content-text {
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-link {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .content-item::after {
+    display: none;
+    position: relative;
+  }
+
+  .content-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .header-wrap {
+    flex-direction: row;
+  }
+
+  .bread-crumb__list {
+    margin-top: 50px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .btn-get {
+    display: none;
+  }
+
+  .content-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .content-text {
+    line-height: 24px;
+    color: #ffffff;
+    font-size: 20px;
+  }
+}
+
 .bread-crumb__list {
   display: flex;
   align-items: center;
@@ -1086,6 +1184,61 @@ button:hover {
   margin: 0 4px;
 }
 
+@media screen and (max-width: 700px) {
+  .nav-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .content-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .content-text {
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-link {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+
+  .content-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .header-wrap {
+    flex-direction: row;
+  }
+
+  .bread-crumb__list {
+    margin-top: 50px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .btn-get {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .site-logo {
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
 .content-item:last-child::after {
   display: none;
 }
@@ -1118,6 +1271,37 @@ button:hover {
   font-size: 18px;
   line-height: 33px;
   color: #121416;
+}
+
+@media screen and (max-width: 1500px) {
+  .follow {
+    float: none;
+    margin: 0 auto;
+    display: flex;
+    align-items: first baseline;
+    gap: 40px;
+    width: 75%;
+  }
+
+  .site-main {
+    float: none;
+    margin: 0 auto;
+    /* margin-top: 600px; */
+  }
+
+  .ranking {
+    display: none;
+  }
+
+  .options-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .form {
+    flex-direction: column;
+  }
 }
 
 .info-title {
@@ -1201,6 +1385,90 @@ button:hover {
   position: absolute;
   bottom: -24px;
   left: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .follow {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .statistics-item::after {
+    display: none;
+    position: relative;
+  }
+
+  .sign-up {
+    text-align: center;
+  }
+
+  .sign-up__subtitle {
+    text-align: center;
+  }
+  .options-list {
+    margin-bottom: 100px;
+  }
+
+  .follows {
+    text-align: center;
+  }
+  .article-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info-item {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .info-subtitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .info-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .sign-up__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .sign-up__subtitle {
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  .options-cards .option-img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sign-up__subtitle {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  .options-cards .option-img {
+    width: 300px;
+  }
+
+  .statistics {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .follow {
+    max-width: 375px;
+    width: 100%;
+  }
 }
 
 .statistics-item:nth-child(1)::after {
@@ -1358,6 +1626,12 @@ button:hover {
 
 .option-item:last-child::after {
   display: none;
+}
+
+@media screen and (max-width: 1780px) {
+  .option-list {
+    justify-content: center;
+  }
 }
 
 .form-follow {
