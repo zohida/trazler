@@ -1880,6 +1880,7 @@ main {
   .second-main {
     float: none;
     margin: 60px auto;
+    width: 100%;
   }
 
   .options {
@@ -1978,7 +1979,6 @@ main {
     max-width: 350px;
     width: 100%;
   }
-  
 }
 
 .box-text {
