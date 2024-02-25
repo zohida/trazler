@@ -50,6 +50,11 @@
   a {
     display: inline-block;
     text-decoration: none;
+    transition: all .2s ease-in;
+  }
+
+  a:hover {
+    opacity: 0.6;
   }
   
   ul,
