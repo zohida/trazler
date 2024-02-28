@@ -192,6 +192,7 @@ button:hover {
   flex-direction: column;
   max-width: 560px;
   width: 100%;
+  position: relative;
 }
 
 .cards-title {
@@ -201,17 +202,33 @@ button:hover {
   line-height: 40px;
   color: #121416;
 }
+.buttons-img {
+  position: absolute;
+  padding: 32px;
+}
+
+.btn-icon {
+  padding: 8px, 10px, 8px, 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26.28px;
+  color: #fff;
+}
 
 .cards-author-info {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 10px;
 }
 
 .author-name {
   margin: 0;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
 }
 
@@ -231,7 +248,7 @@ button:hover {
   margin-left: 10px;
   color: #6c757d;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 40px;
 }
 
@@ -390,6 +407,21 @@ button:hover {
   align-items: center;
   justify-content: center;
   gap: 40px;
+}
+
+.destinations-paragraph {
+  position: absolute;
+  top: 48%;
+  left: 53px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26.28px;
+  color:#fff;
+}
+
+.destination-cards {
+  position: relative;
 }
 
 /* CATEGORY STYLES  */
