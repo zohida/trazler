@@ -225,6 +225,7 @@ button:hover {
   gap: 10px;
 }
 
+
 .author-name {
   margin: 0;
   font-weight: 700;
@@ -245,11 +246,11 @@ button:hover {
 
 .card-time {
   font-family: "EuropaNuova-Regular";
-  margin-left: 10px;
   color: #6c757d;
+  margin-left: 10px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .card-share-box {
@@ -262,7 +263,11 @@ button:hover {
   line-height: 40px;
   color: rgba(108, 117, 125, 0.4);
   margin-left: 8px;
-  margin-right: 7px;
+}
+
+.share-icon {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .cards-description {
@@ -296,6 +301,20 @@ button:hover {
   margin-bottom: 2px;
 }
 
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
 /* SOCIAL SECTION STYLES */
 
 .social {
@@ -1605,6 +1624,11 @@ main {
   color: #121416;
 }
 
+.card-wrap {
+  display: flex;
+  align-items: center;
+}
+
 .author-desc {
   font-weight: 700;
   font-size: 18px;
@@ -1675,7 +1699,6 @@ main {
 
   .cards-author-info {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .author-name {
@@ -1688,8 +1711,8 @@ main {
     margin-left: 10px;
     color: #6c757d;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .cards-link {
