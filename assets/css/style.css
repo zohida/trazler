@@ -36,8 +36,7 @@
 
 .hero {
   position: relative;
-  /* max-width: 2048px;
-  width: 100%; */
+  object-fit: cover;
   background-image: url("../images/bg-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,8 +222,8 @@ button:hover {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 10px;
+  flex-shrink: 0;
 }
-
 
 .author-name {
   margin: 0;
@@ -251,6 +250,7 @@ button:hover {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  flex-shrink: 0;
 }
 
 .card-share-box {
@@ -306,6 +306,7 @@ button:hover {
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
+  cursor: auto;
 }
 
 .footer-item {
@@ -314,7 +315,18 @@ button:hover {
   gap: 20px;
   text-align: center;
   justify-content: center;
+  cursor: auto;
 }
+
+.footer-item a img {
+  cursor: auto;
+  transition: all 0.2s ease-in;
+}
+
+.footer-item a img:hover {
+  color: #fff;
+}
+
 /* SOCIAL SECTION STYLES */
 
 .social {
@@ -436,7 +448,7 @@ button:hover {
   font-weight: 700;
   font-size: 24px;
   line-height: 26.28px;
-  color:#fff;
+  color: #fff;
 }
 
 .destination-cards {
@@ -607,6 +619,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  object-fit: cover;
 }
 
 .header-wrap {
@@ -1105,6 +1118,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: auto;
 }
 
 .footer-link {
@@ -1168,6 +1182,7 @@ main {
   position: relative;
   max-width: 1322px;
   width: 100%;
+  object-fit: cover;
 }
 
 .intro-status-list {
