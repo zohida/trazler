@@ -315,11 +315,9 @@ button:hover {
   gap: 20px;
   text-align: center;
   justify-content: center;
-  cursor: auto;
 }
 
 .footer-item a img {
-  cursor: auto;
   transition: all 0.2s ease-in;
 }
 
@@ -366,6 +364,7 @@ button:hover {
 .cards {
   max-width: 560px;
   width: 100%;
+  cursor: auto;
 }
 
 .cards img {
@@ -584,6 +583,7 @@ button:hover {
   font-size: 18px;
   line-height: 24.58px;
   margin-bottom: 16px;
+  color: #121416;
 }
 
 .category-wrapper {

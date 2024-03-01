@@ -3,96 +3,115 @@
 @import url(https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa+Regular);
 @import url(https://db.onlinewebfonts.com/c/d3bfee78e8ead45d9057a95bb6ff5de8?family=Europa-Bold);
 
+@font-face {
+  font-display: swap;
+  font-family: "Sansita";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./../fonts/sansita-v11-latin-regular.woff2") format("woff2");
+}
 
 @font-face {
-    font-display: swap; 
-    font-family: 'Sansita';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./../fonts/sansita-v11-latin-regular.woff2') format('woff2'); 
-  }
- 
-  @font-face {
-    font-display: swap; 
-    font-family: 'Sansita';
-    font-style: normal;
-    font-weight: 700;
-    src: url('./../fonts/sansita-v11-latin-700.woff2') format('woff2'); 
-  }
+  font-display: swap;
+  font-family: "Sansita";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./../fonts/sansita-v11-latin-700.woff2") format("woff2");
+}
 
-  button {
-    cursor: pointer;
-    background: transparent;
-    outline: none;
-    border: none;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  img {
-    vertical-align: middle;
-  }
-  
-  .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-  
-  a {
-    display: inline-block;
-    text-decoration: none;
-    transition: all .2s ease-in;
-  }
+button {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+}
 
-  a:hover {
-    opacity: 0.6;
-  }
-  
-  ul,
-  ol {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  html {
-    height: 100%;
-  }
-  
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-family: "Europa-Bold", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    scroll-behavior: smooth;
-    margin: 0;
-  }
-  
-  main {
-    flex-grow: 1;
-  }
-  
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  cursor: default;
+}
 
-  .hidden {
-    display: none;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .container {
-    max-width: 1800px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
+img {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+h4,
+h5 {
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+h4:hover,
+h5:hover {
+  opacity: 0.7;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Europa-Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
